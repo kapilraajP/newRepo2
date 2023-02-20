@@ -8,8 +8,8 @@ type OAuth2RefreshTokenGrantConfig record {
     string refreshUrl = "https://www.googleapis.com/oauth2/v3/token";
 };
 
-configurable string SheetId = ?;
-configurable string WorkspaceName = ?;
+string SheetId = "1teKpc-0Pe5tfgtK7Nql95iRUa8B3bO6hwfCMrQP6NwI";
+string WorkspaceName = "Sheet1";
 configurable OAuth2RefreshTokenGrantConfig GSheetAuthConfig = ?;
 public function main() returns error? {
     sheets:Client spreadsheetClient = check new ({
